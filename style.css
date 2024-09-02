@@ -252,6 +252,10 @@ body{
 
 /*-------Responsividade-------*/
 @media screen and (max-width: 768px) {
+    .banner{
+        height: 28vh;
+    }
+    
     .titulo{
         height: 10vh;
         font-size: 13px;
