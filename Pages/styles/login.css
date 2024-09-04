@@ -70,95 +70,106 @@ body{
     height: 60px;
 }
 
-/*-------Sobre-------*/
-.sobre{
+/*-------Principal-------*/
+.principal{
     width: 100%;
-    height: 100vh;
+    height: 86vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
 }
 
-.sobre img{
-    width: 30%;
-    height: 60vh;
-}
-
-/*-------Titulo-------*/
-.titulo{
-    width: 60%;
-    height: 60vh;
+/*-------Login-------*/
+.login2{
+    width: 31%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
     border-radius: 10px;
-    background-color: var(--dark-green);
-    color: var(--white);
-    padding: 20px;
+    -webkit-box-shadow: 0px 10px 16px 3px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 10px 16px 3px rgba(0,0,0,0.26);
+    box-shadow: 0px 10px 16px 3px rgba(0,0,0,0.26);
 }
 
-.titulo h2{
+.login2 h1{
     font-size: 40px;
-    margin-top: 70px;
 }
 
-.titulo p{
-    font-size: 20px;
-    text-align: justify;
+.login2 p{
+    font-size: 18px;
+}
+
+/*-------Info-------*/
+.info{
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
 }
 
-/*-------Copyright-------*/
-.copyright{
-    width: 100%;
-    height: 13vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--dark-green);
-    color: var(--white);
-}
-
-/*-------Redes-------*/
-.redes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.redes i{
-    width: 50px;
+.info input{
+    width: 360px;
     height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 0 10px;
+    margin-top: 10px;
+    color: var(--black);
+    background-color: rgb(236, 236, 236);
+    font-size: 14px;
+}
+
+/*-------Link-------*/
+.link{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 70px;
+    margin-top: 10px;
+}
+
+.link a{
+    color: var(--black);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.link a:hover{
+    color: var(--dark-green);
+}
+
+/*-------Botão_de_cadastro-------*/
+.login2 button{
+    width: 350px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
     background-color: var(--black);
     color: var(--white);
-    border-radius: 50%;
-    font-size: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 /*-------Responsividade-------*/
 @media screen and (max-width: 768px) {
-    .sobre{
-        flex-direction: column;
+    .login2{
+        width: 80%;
     }
 
-    .sobre img{
-        width: 200px;
-        height: 200px;
+    .info input{
+        width: 320px;
     }
 
-    .titulo{
-        width: 95%;
+    .link{
+        gap: 40px;
     }
 
-    .titulo h2{
-        margin-top: 10px;
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .titulo p{
-        font-size: 18px;
+    .login2 button{
+        width: 300px;
     }
 }
