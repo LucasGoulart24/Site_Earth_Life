@@ -8,8 +8,8 @@
 
 /*-------Cores-------*/
 :root{
-    --green: #7DCE82;
-    --dark-green: #558F5A;
+    --green: #4DFF59;
+    --dark-green: #25882B;
     --white: #ffffff;
     --black: #000000;
 }
@@ -24,7 +24,7 @@ body{
     height: 13vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--dark-green);
     padding: 10px;
 }
@@ -61,8 +61,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--green);
-    border-radius: 50%;
 }
 
 .logo img{
@@ -81,8 +79,8 @@ body{
 
 /*-------Login-------*/
 .login2{
-    width: 31%;
-    height: 70vh;
+    width: 33%;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,6 +94,7 @@ body{
 
 .login2 h1{
     font-size: 40px;
+    font-weight: 300;
 }
 
 .login2 p{
@@ -110,7 +109,7 @@ body{
 }
 
 .info input{
-    width: 360px;
+    width: 380px;
     height: 50px;
     border: none;
     outline: none;
@@ -118,7 +117,7 @@ body{
     padding: 0 10px;
     margin-top: 10px;
     color: var(--black);
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(227, 227, 227);
     font-size: 14px;
 }
 
@@ -127,7 +126,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 70px;
+    gap: 90px;
     margin-top: 10px;
 }
 
@@ -143,7 +142,7 @@ body{
 
 /*-------Botão_de_cadastro-------*/
 .login2 button{
-    width: 350px;
+    width: 370px;
     height: 50px;
     border: none;
     outline: none;
@@ -155,21 +154,51 @@ body{
     margin-top: 10px;
 }
 
+/*-------Conta-------*/
+.conta{
+    margin-top: 10px;
+}
+
+.conta h3{
+    font-weight: 400;
+}
+
+/*-------Redes-------*/
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.redes i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 1px solid var(--black);
+}
+
 /*-------Responsividade-------*/
 @media screen and (max-width: 768px) {
     .login2{
-        width: 80%;
+        width: 90%;
     }
 
     .info input{
-        width: 320px;
+        width: 350px;
     }
 
     .link{
-        gap: 40px;
+        gap: 60px;
     }
 
     .login2 button{
-        width: 300px;
+        width: 350px;
+        font-size: 17px;
     }
 }

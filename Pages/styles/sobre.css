@@ -8,8 +8,8 @@
 
 /*-------Cores-------*/
 :root{
-    --green: #7DCE82;
-    --dark-green: #558F5A;
+    --green: #4DFF59;
+    --dark-green: #25882B;
     --white: #ffffff;
     --black: #000000;
 }
@@ -24,7 +24,7 @@ body{
     height: 13vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--dark-green);
     padding: 10px;
 }
@@ -61,8 +61,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--green);
-    border-radius: 50%;
 }
 
 .logo img{
@@ -70,19 +68,32 @@ body{
     height: 60px;
 }
 
-/*-------Sobre-------*/
-.sobre{
+/*-------Principal-------*/
+.principal{
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+}
+
+/*-------Sobre-------*/
+.sobre{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.39);
+    box-shadow: 0px 10px 32px 0px rgba(0,0,0,0.39);
 }
 
 .sobre img{
-    width: 30%;
-    height: 60vh;
+    width: 40%;
+    height: 80vh;
 }
 
 /*-------Titulo-------*/
@@ -90,8 +101,6 @@ body{
     width: 60%;
     height: 60vh;
     border-radius: 10px;
-    background-color: var(--dark-green);
-    color: var(--white);
     padding: 20px;
 }
 
@@ -140,22 +149,26 @@ body{
 /*-------Responsividade-------*/
 @media screen and (max-width: 768px) {
     .sobre{
+        width: 90%;
+        height: 83vh;
+        padding: 10px;
         flex-direction: column;
     }
 
     .sobre img{
-        width: 200px;
-        height: 200px;
+        width: 50%;
+        height: 30vh;
     }
 
     .titulo{
-        width: 95%;
+        width: 100%;
+        padding: 0px;
     }
 
     .titulo h2{
-        margin-top: 10px;
-        text-align: center;
+        margin-top: 0px;
         font-size: 30px;
+        text-align: center;
     }
 
     .titulo p{

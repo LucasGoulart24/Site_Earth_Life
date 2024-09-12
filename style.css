@@ -8,8 +8,8 @@
 
 /*-------Cores-------*/
 :root{
-    --green: #7DCE82;
-    --dark-green: #558F5A;
+    --green: #4DFF59;
+    --dark-green: #25882B;
     --white: #ffffff;
     --black: #000000;
 }
@@ -24,7 +24,7 @@ body{
     height: 13vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--dark-green);
     padding: 10px;
 }
@@ -61,8 +61,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--green);
-    border-radius: 50%;
 }
 
 .logo img{
@@ -95,18 +93,17 @@ body{
 
 /*-------Ajudar-------*/
 .ajudar{
-    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .ajuda{
-    width: 470px;
-    height: 560px;
+    width: 40%;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,14 +130,14 @@ body{
 }
 
 .ajuda img{
-    width: 200px;
-    height: 200px;
+    width: 40%;
+    height: 30vh;
 }
 
 /*-------Queimadas-------*/
 .queimada{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +186,7 @@ body{
 /*-------Pantanal-------*/
 .pantanal{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,94 +249,85 @@ body{
 
 /*-------Responsividade-------*/
 @media screen and (max-width: 768px) {
-    .banner{
-        height: 28vh;
-    }
-    
-    .titulo{
-        height: 10vh;
-        font-size: 13px;
+    .titulo h1{
+        font-size: 26px;
     }
 
     .ajudar{
-        height: 100vh;
+        height: 67vh;
+        padding: 10px;
         gap: 10px;
     }
 
     .ajuda{
-        width: 225px;
-        height: 300px;
-        padding: 3px;
+        width: 48%;
+        height: 50vh;
     }
 
     .ajuda h2{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .ajuda p{
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .ajuda img{
-        width: 80px;
-        height: 80px;
+        width: 70%;
+        height: 20vh;
     }
 
     .queimada{
-        height: 93vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-        padding: 10px;
-        gap: 10px;
+        gap: 0px;
     }
 
     .queimada img{
-        width: 100%;
-        height: 40vh;
+        width: 90%;
+        height: 30vh;
     }
 
     .texto{
         width: 100%;
+        padding: 7px;
     }
 
     .texto h2{
-        font-size: 24px;
+        margin-top: 5px;
+        font-size: 27px;
         text-align: center;
-        margin-top: 0px;
     }
 
     .texto p{
-        font-size: 12px;
-        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .botao{
+        margin-top: 10px;
     }
 
     .pantanal{
-        height: 91vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column-reverse;
-        padding: 10px;
-        gap: 10px;
+        gap: 0px;
     }
 
     .pantanal img{
-        width: 100%;
-        height: 40vh;
+        width: 95%;
+        height: 35vh;
     }
 
     .texto2{
         width: 100%;
+        padding: 7px;
     }
 
     .texto2 h2{
-        font-size: 24px;
+        font-size: 27px;
         text-align: center;
+        margin-top: 5px;
     }
 
     .texto2 p{
-        font-size: 12px;
+        font-size: 15px;
     }
 }
