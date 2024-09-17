@@ -215,36 +215,53 @@ body{
     margin-bottom: 10px;
 }
 
-
-/*-------Copyright-------*/
-.copyright{
+/*-------Footer-------*/
+.footer{
     width: 100%;
-    height: 13vh;
+    height: 30vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--dark-green);
-    color: var(--white);
 }
 
 /*-------Redes-------*/
 .redes{
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
 }
 
 .redes i{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--black);
-    color: var(--white);
     border-radius: 50%;
-    font-size: 30px;
+    color: var(--white);
+    font-size: 43px;
+}
+
+/*-------Links-------*/
+.links{
+    margin-top: 20px;
+}
+
+.links a{
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 17px;
+}
+
+/*-------Copyright-------*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 /*-------Responsividade-------*/
