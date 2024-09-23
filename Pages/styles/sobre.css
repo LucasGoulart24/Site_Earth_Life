@@ -8,8 +8,8 @@
 
 /*-------Cores-------*/
 :root{
-    --green: #4DFF59;
-    --dark-green: #25882B;
+    --green: #2f7d23;
+    --dark-green: #184a12;
     --white: #ffffff;
     --black: #000000;
 }
@@ -25,7 +25,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--dark-green);
     padding: 10px;
 }
 
@@ -45,12 +44,12 @@ body{
     border: none;
     outline: none;
     border-radius: 10px;
-    background-color: var(--green);
+    background-color: var(--black);
     cursor: pointer;
 }
 
 .login a{
-    color: var(--black);
+    color: var(--white);
     font-size: 15px;
 }
 

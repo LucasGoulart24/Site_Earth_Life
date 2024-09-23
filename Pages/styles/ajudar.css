@@ -8,8 +8,8 @@
 
 /*-------Cores-------*/
 :root{
-    --green: #4DFF59;
-    --dark-green: #25882B;
+    --green: #2f7d23;
+    --dark-green: #184a12;
     --white: #ffffff;
     --black: #000000;
 }
@@ -25,7 +25,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--dark-green);
     padding: 10px;
 }
 
@@ -45,12 +44,12 @@ body{
     border: none;
     outline: none;
     border-radius: 10px;
-    background-color: var(--green);
+    background-color: var(--black);
     cursor: pointer;
 }
 
 .login a{
-    color: var(--black);
+    color: var(--white);
     font-size: 15px;
 }
 
@@ -75,13 +74,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--white);
     font-size: 25px;
 }
 
 /*-------Principal-------*/
 .principal{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +90,7 @@ body{
 /*-------Reciclagem-------*/
 .reciclagem{
     width: 80%;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +108,7 @@ body{
 /*-------Incêncido-------*/
 .incendio{
     width: 80%;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,7 +147,7 @@ body{
 
     .reciclagem{
         width: 95%;
-        height: 90vh;
+        height: 80vh;
         flex-direction: column;
     }
 
@@ -158,7 +158,7 @@ body{
 
     .incendio{
         width: 95%;
-        height: 90vh;
+        height: 80vh;
         flex-direction: column-reverse;
     }
 
