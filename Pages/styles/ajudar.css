@@ -24,7 +24,8 @@ body{
     height: 13vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: var(--dark-green);
     padding: 10px;
 }
 
@@ -38,19 +39,15 @@ body{
     text-decoration: none;
 }
 
-/*-------Botão_de_login-------*/
-.login{
-    padding: 10px 7px;
+/*-------Menu_Hamburguer-------*/
+.menu button{
+    padding: 10px 10px;
     border: none;
-    outline: none;
-    border-radius: 10px;
-    background-color: var(--black);
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.login a{
+    background-color: var(--black);
     color: var(--white);
-    font-size: 15px;
+    display: none;
 }
 
 /*-------Logo_do_site-------*/
@@ -141,6 +138,26 @@ body{
 
 /*-------Responsividade-------*/
 @media screen and (max-width: 768px){
+    .menu button{
+        display: block;
+    }
+    
+    .menu ul{
+        width: 30%;
+        display: none;
+        position: absolute;
+        top: 13%;
+        right: 0%;
+        background-color: var(--dark-green);
+        padding: 5px;
+        text-align: left;
+    }
+
+    .menu li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
     .titulo h1{
         font-size: 30px;
     }

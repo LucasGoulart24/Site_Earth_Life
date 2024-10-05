@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Img/Logo.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
     <link rel="stylesheet" href="./styles/login.css">
     <title>Earth Life</title>
 </head>
@@ -13,12 +14,13 @@
         <div class="logo">
             <img src="../Img/Logo.png" alt="Logo">
         </div>
-        <ul>
+        <ul id="menu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="./sobre.html">Sobre</a></li>
             <li><a href="./ajudar.html">Ajudar</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
-        <button class="login"><a href="#">Login</a></button>
+        <button id="menuButton"><span class="material-symbols-outlined">menu</span></button>
     </nav>
     <div class="principal">
         <div class="login2">
@@ -34,7 +36,7 @@
             </div>
             <button>Cadastre-se</button>
             <div class="conta">
-                <h3>Ou entre com</h3>
+                <h3>Ou entre com a conta</h3>
                 <div class="redes">
                     <i class='bx bxl-google'></i>
                     <i class='bx bxl-facebook'></i>
@@ -42,5 +44,6 @@
             </div>
         </div>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>

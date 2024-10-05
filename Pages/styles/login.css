@@ -24,7 +24,8 @@ body{
     height: 13vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: var(--dark-green);
     padding: 10px;
 }
 
@@ -38,19 +39,15 @@ body{
     text-decoration: none;
 }
 
-/*-------Botão_de_login-------*/
-.login{
-    padding: 10px 7px;
+/*-------Menu_Hamburguer-------*/
+.menu button{
+    padding: 10px 10px;
     border: none;
-    outline: none;
-    border-radius: 10px;
-    background-color: var(--black);
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.login a{
+    background-color: var(--black);
     color: var(--white);
-    font-size: 15px;
+    display: none;
 }
 
 /*-------Logo_do_site-------*/
@@ -113,11 +110,15 @@ body{
     border: none;
     outline: none;
     border-radius: 50px;
-    padding: 0 10px;
+    padding: 0 15px;
     margin-top: 10px;
     color: var(--black);
     background-color: rgb(227, 227, 227);
     font-size: 14px;
+}
+
+.info input::placeholder{
+    color: var(--black);
 }
 
 /*-------Link-------*/
@@ -177,13 +178,40 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 30px;
     border: 1px solid var(--black);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.redes i:hover{
+    background-color: var(--black);
+    color: var(--white);
 }
 
 /*-------Responsividade-------*/
 @media screen and (max-width: 768px) {
+    .menu button{
+        display: block;
+    }
+    
+    .menu ul{
+        width: 30%;
+        display: none;
+        position: absolute;
+        top: 13%;
+        right: 0%;
+        background-color: var(--dark-green);
+        padding: 5px;
+        text-align: left;
+    }
+
+    .menu li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .login2{
         width: 90%;
     }

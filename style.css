@@ -24,7 +24,7 @@ body{
     height: 13vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
 }
 
@@ -36,21 +36,6 @@ body{
     color: var(--white);
     padding: 10px 17px;
     text-decoration: none;
-}
-
-/*-------Botão_de_login-------*/
-.login{
-    padding: 10px 7px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    background-color: var(--black);
-    cursor: pointer;
-}
-
-.login a{
-    color: var(--white);
-    font-size: 15px;
 }
 
 /*-------Logo_do_site-------*/
@@ -65,6 +50,17 @@ body{
 .logo img{
     width: 60px;
     height: 60px;
+}
+
+/*-------Menu_Hamburguer-------*/
+.menu button{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--white);
+    display: none;
 }
 
 /*-------Banner-------*/
@@ -93,16 +89,17 @@ body{
 
 /*-------Ajudar-------*/
 .ajudar{
-    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 30px;
 }
 
 .ajuda{
-    width: 40%;
+    width: 35%;
     height: 70vh;
     display: flex;
     align-items: center;
@@ -218,7 +215,7 @@ body{
 /*-------Footer-------*/
 .footer{
     width: 100%;
-    height: 30vh;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,61 +263,77 @@ body{
 
 /*-------Responsividade-------*/
 @media screen and (max-width: 768px) {
+    .menu button{
+        display: block;
+    }
+    
+    .menu ul{
+        width: 30%;
+        display: none;
+        position: absolute;
+        top: 13%;
+        right: 0%;
+        background-color: var(--green);
+        padding: 5px;
+        text-align: left;
+    }
+
+    .menu li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .banner{
         height: 30vh;
     }
 
     .titulo h1{
-        font-size: 26px;
-    }
-
-    .ajudar{
-        height: 67vh;
-        padding: 10px;
-        gap: 10px;
+        font-size: 27px;
     }
 
     .ajuda{
-        width: 48%;
+        width: 46%;
         height: 50vh;
     }
 
     .ajuda h2{
-        font-size: 25px;
+        font-size: 27px;
+        margin-bottom: 0px;
     }
 
     .ajuda p{
         font-size: 10px;
+        margin-bottom: 5px;
     }
 
     .ajuda img{
-        width: 70%;
-        height: 20vh;
+        width: 90%;
+        height: 15vh;
     }
 
     .queimada{
         flex-direction: column;
-        gap: 0px;
+        gap: 5px;
     }
 
     .queimada img{
-        width: 90%;
-        height: 30vh;
+        width: 95%;
+        height: 40vh;
+        margin-top: 10px;
     }
 
     .texto{
         width: 100%;
-        padding: 7px;
+        padding: 10px;
     }
 
     .texto h2{
-        margin-top: 5px;
-        font-size: 27px;
-        text-align: center;
+        margin-top: 0px;
+        font-size: 30px;
     }
 
     .texto p{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .botao{
@@ -329,26 +342,32 @@ body{
 
     .pantanal{
         flex-direction: column-reverse;
-        gap: 0px;
+        gap: 5px;
     }
 
     .pantanal img{
         width: 95%;
-        height: 35vh;
+        height: 40vh;
+        margin-top: 10px;
     }
 
     .texto2{
         width: 100%;
-        padding: 7px;
+        padding: 10px;
     }
 
     .texto2 h2{
-        font-size: 27px;
-        text-align: center;
-        margin-top: 5px;
+        margin-top: 0px;
+        font-size: 30px;
     }
 
     .texto2 p{
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .redes i{
+        width: 60px;
+        height: 60px;
+        font-size: 50px;
     }
 }
