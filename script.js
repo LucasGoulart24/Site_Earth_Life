@@ -8,3 +8,15 @@ menuButton.addEventListener('click', function () {
         menu.style.display = 'block';
     }
 });
+
+// Login
+function cadastro() {
+    const email = document.getElementById('email');
+    const senha = document.getElementById('senha');
+
+    if (!email || !senha) {
+        window.alert('Login com sucesse!');
+    }else {
+        window.alert('Cadastro incorreto!');
+    }
+}

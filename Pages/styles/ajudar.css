@@ -58,11 +58,17 @@ body{
 
 /*-------Logo_do_site-------*/
 .logo{
-    width: 75px;
-    height: 75px;
+    width: 13%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.logo h3{
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 400;
 }
 
 .logo img{
@@ -97,7 +103,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--dark-green);
+    background-color: var(--white);
     padding: 0 40px;
     border-radius: 10px;
     gap: 10px;
@@ -115,7 +121,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--dark-green);
+    background-color: var(--white);
     padding: 0 40px;
     border-radius: 10px;
     gap: 10px;
@@ -128,7 +134,7 @@ body{
 
 /*-------Texto-------*/
 .texto{
-    color: var(--white);
+    color: var(--black);
 }
 
 .texto h2{
@@ -162,6 +168,14 @@ body{
     .menu li{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .menu .botao{
+        background-color: transparent;
+    }
+
+    .logo{
+        width: 42%;
     }
     
     .titulo h1{

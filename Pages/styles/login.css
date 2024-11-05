@@ -58,11 +58,17 @@ body{
 
 /*-------Logo_do_site-------*/
 .logo{
-    width: 75px;
-    height: 75px;
+    width: 13%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.logo h3{
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 400;
 }
 
 .logo img{
@@ -216,6 +222,14 @@ body{
     .menu li{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .menu .botao{
+        background-color: transparent;
+    }
+
+    .logo{
+        width: 42%;
     }
 
     .login2{
