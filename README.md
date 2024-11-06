@@ -1,7 +1,7 @@
 # Earth Life 🌍
 
 ## Data
-Criação: 01/09/2024
+Criação: 01/09/2024 ||
 Ultima atualização: 05/11/2024
 
 ## Descrição
