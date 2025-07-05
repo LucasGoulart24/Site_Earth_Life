@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Img/Logo.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
     <link rel="stylesheet" href="./styles/login.css">
     <title>Earth Life</title>
@@ -25,10 +24,15 @@
     </nav>
     <div class="principal">
         <div class="login2">
-            <h1>Bem vindo(a)</h1>
+            <img src="../Img/Perfil.png" alt="Perfil">
+            <h2>Bem vindo(a)</h2>
             <p>Faça seu cadastro</p>
             <div class="info">
+                <label for="#">Email</label>
                 <input type="email" placeholder="Digite seu email" id="email">
+            </div>
+            <div class="info">
+                <label for="#">Senha</label>
                 <input type="password" placeholder="Digite sua senha" id="senha">
             </div>
             <div class="link">
@@ -37,11 +41,7 @@
             </div>
             <button onclick="cadastro()">Cadastre-se</button>
             <div class="conta">
-                <h3>Ou entre com a conta</h3>
-                <div class="redes">
-                    <i class='bx bxl-google'></i>
-                    <i class='bx bxl-facebook'></i>
-                </div>
+                <p>Você não tem uma conta? <a href="#">Registre-se</a></p>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/*-------Cores-------*/
+/*Cores*/
 :root{
     --green: #2f7d23;
     --dark-green: #184a12;
@@ -18,7 +18,7 @@ body{
     background-color: var(--green);
 }
 
-/*-------Menu-------*/
+/*Menu*/
 .menu{
     width: 100%;
     height: 13vh;
@@ -44,7 +44,7 @@ body{
     background-color: var(--black);
 }
 
-/*-------Menu_Hamburguer-------*/
+/*Menu_Hamburguer*/
 .menu button{
     width: 50px;
     height: 50px;
@@ -56,7 +56,7 @@ body{
     display: none;
 }
 
-/*-------Logo_do_site-------*/
+/*Logo*/
 .logo{
     width: 13%;
     display: flex;
@@ -76,70 +76,68 @@ body{
     height: 60px;
 }
 
-/*-------Titulo-------*/
+/*Titulo*/
 .titulo{
     width: 100%;
     height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
     font-size: 25px;
+    color: var(--white);
 }
 
-/*-------Principal-------*/
+.titulo h1{
+    font-weight: 400;
+}
+
+/*Principal*/
 .principal{
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*-------Reciclagem-------*/
+/*Reciclagem*/
 .reciclagem{
     width: 80%;
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
-    padding: 0 40px;
-    border-radius: 10px;
+    color: var(--white);
     gap: 10px;
 }
 
 .reciclagem img{
     width: 350px;
-    height: 370px;
+    height: 350px;
 }
 
-/*-------Incêncido-------*/
+/*Incêncido*/
 .incendio{
     width: 80%;
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
-    padding: 0 40px;
-    border-radius: 10px;
     gap: 10px;
 }
 
 .incendio img{
     width: 350px;
-    height: 370px;
+    height: 350px;
 }
 
-/*-------Texto-------*/
+/*Texto*/
 .texto{
-    color: var(--black);
+    color: var(--white);
 }
 
 .texto h2{
     font-size: 40px;
-    margin-top: 50px;
 }
 
 .texto p{
@@ -148,7 +146,7 @@ body{
     margin-top: 10px;
 }
 
-/*-------Responsividade-------*/
+/*Responsividade*/
 @media screen and (max-width: 768px){
     .menu button{
         display: block;
@@ -184,24 +182,22 @@ body{
 
     .reciclagem{
         width: 95%;
-        height: 80vh;
         flex-direction: column;
     }
 
     .reciclagem img{
-        width: 60%;
-        height: 30vh;
+        width: 200px;
+        height: 200px;
     }
 
     .incendio{
         width: 95%;
-        height: 80vh;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .incendio img{
-        width: 60%;
-        height: 30vh;
+        width: 200px;
+        height: 200px;
     }
 
     .texto h2{
